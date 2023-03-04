@@ -1,24 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import { itemData } from './mock/data/itemData';
+import ShopItemClass from './components/ShopItemClass';
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+    <div className="container">
+    <div className="background-element">
     </div>
+    <div className="highlight-window">
+      <div className='highlight-overlay'></div>
+    </div>
+    <div className="window">
+      <ShopItemClass item={itemData} />
+    </div>
+  </div>
   );
 }
 

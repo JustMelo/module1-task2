@@ -3,7 +3,7 @@ import { itemData } from './mock/data/itemData';
 import ShopItemClass from './components/ShopItemClass';
 
 function App() {
-
+  
   return (
 
     <div className="container">
@@ -13,7 +13,7 @@ function App() {
       <div className='highlight-overlay'></div>
     </div>
     <div className="window">
-      <ShopItemClass item={itemData} />
+      <ShopItemClass { ...itemData } />
     </div>
   </div>
   );
